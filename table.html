@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mauritius Biggest Cities</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!------SIDEBAR------>
+
+<div id="sideNav">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="https://www.britannica.com/place/Mauritius">Mauritius History</a></li>
+            <li><a href="https://www.worldatlas.com/maps/mauritius">Island Geography</a></li>
+            <li><a href="https://mauritianfoodrecipes.com/">Culture</a></li>
+            <li><a href="table.html">Cities</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+</div>
+<div id="menuBtn">
+    <img src="images/menu.png" id="menu">
+</div>
+
+<script>
+    var menuBtn = document.getElementById("menuBtn")
+    var sideNav = document.getElementById("sideNav")
+    var menu = document.getElementById("menu")
+    
+    sideNav.style.right = "-250px";
+
+    menuBtn.onclick = function(){
+        if(sideNav.style.right == "-250px"){
+            sideNav.style.right = "0";
+            menu.src = "images/close.png";
+        }
+        else{
+            sideNav.style.right = "-250px";
+            menu.src = "images/menu.png";
+        }
+    }
+</script>
+
+<!---------TABLE------->
+
+    <table class="content-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>City Name</th>
+            <th>Population</th>
+            <th>Latitude</th>
+            <th>Longitude</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Port Louis (Capital)</td>
+            <td>155,337</td>
+            <td>-20.1619</td>
+            <td>57.4989</td>
+          </tr>
+          <tr class="active-row">
+            <td>2</td>
+            <td>Beau Bassin-Rose Hill</td>
+            <td>111,466</td>
+            <td>-20.2332</td>
+            <td>57.4661</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Vacoas</td>
+            <td>110,111</td>
+            <td>-20.2981</td>
+            <td> 57.4783</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Curepipe</td>
+            <td>84,311</td>
+            <td>-20.3147</td>
+            <td>57.5203</td>
+          </tr>
+          <tr class="active-row">
+            <td>5</td>
+            <td>Quatre Bornes</td>
+            <td>81,072</td>
+            <td>-20.2638</td>
+            <td>57.4791</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Triolet</td>
+            <td>23,380</td>
+            <td>-20.0547</td>
+            <td>57.5453</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Goodlands</td>
+            <td>21,021</td>
+            <td>-20.035</td>
+            <td>57.6431</td>
+          </tr>
+          <tr class="active-row">
+            <td>8</td>
+            <td>Centre de Flacq</td>
+            <td>17,821</td>
+            <td>-20.1897</td>
+            <td>57.7144</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>Bel Air Riviere Seche</td>
+            <td>17,782</td>
+            <td>-20.2578</td>
+            <td>57.7498</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>Mahebourg</td>
+            <td>17,153</td>
+            <td>-20.4081</td>
+            <td>57.7</td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>Saint Pierre</td>
+            <td>16,525</td>
+            <td>-20.2175</td>
+            <td>57.5208</td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>Bambous</td>
+            <td>15,456</td>
+            <td>-20.2567</td>
+            <td>57.4061</td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td>Le Hochet</td>
+            <td>15,308</td>
+            <td>-20.135</td>
+            <td>57.5211</td>
+          </tr>
+          <tr>
+            <td>14</td>
+            <td>Rose Belle</td>
+            <td>12,730</td>
+            <td>-20.4003</td>
+            <td>57.5967</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="copyright">© Made by Quentin Marie-Jeanne, for EoDT Lecture</p>
+</body>
+</html>

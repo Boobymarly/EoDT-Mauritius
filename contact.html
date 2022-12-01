@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Me</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" 
+    integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" 
+    crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+</head>
+<body class="contact">
+
+<!------SIDEBAR------>
+
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="https://www.britannica.com/place/Mauritius">Mauritius History</a></li>
+                <li><a href="https://www.worldatlas.com/maps/mauritius">Island Geography</a></li>
+                <li><a href="https://mauritianfoodrecipes.com/">Culture</a></li>
+                <li><a href="table.html">Cities</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menuBtn">
+        <img src="images/menu.png" id="menu">
+    </div>
+
+    <script>
+        var menuBtn = document.getElementById("menuBtn")
+        var sideNav = document.getElementById("sideNav")
+        var menu = document.getElementById("menu")
+        
+        sideNav.style.right = "-250px";
+
+        menuBtn.onclick = function(){
+            if(sideNav.style.right == "-250px"){
+                sideNav.style.right = "0";
+                menu.src = "images/close.png";
+            }
+            else{
+                sideNav.style.right = "-250px";
+                menu.src = "images/menu.png";
+            }
+        }
+    </script>
+
+<!-------CONTACT-------->
+	<div class="container">
+		<div class="contact-box">
+			<div class="left"></div>
+			<div class="right">
+				<h2>Contact Me</h2>
+                <form action="https://formsubmit.co/quentin.mariejeanne@ieseg.fr" method="POST">
+                    <input type="text" class="field" placeholder="Your Name">
+                    <input type="text" class="field" placeholder="Your Email">
+                    <input type="text" class="field" placeholder="Phone">
+                    <textarea placeholder="Message" class="field"></textarea>
+                    <button class="btn">Send</button>
+                </form>
+			</div>
+		</div>
+	</div>
+
+    <!-- Social Links Container -->
+    
+    <div class="row social" align="center">
+        <a target = "blank" href = 'https://www.twitch.tv/cooksux'><i class="fab fa-twitch"></i></a>
+        <a target = "blank" href = 'https://www.youtube.com/watch?v=IUgG4-ts2lU'><i class="fab fa-youtube"></i></a>
+        <a target = "blank" href='https://www.facebook.com/groups/696845715052338/'><i class='fab fa-facebook'></i></a>
+  </div>
+  <p class="copyright">© Made by Quentin Marie-Jeanne, for EoDT Lecture</p>
+</body>
+</html>
